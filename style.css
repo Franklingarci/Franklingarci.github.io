@@ -18,7 +18,7 @@
 */
 #home-page{
     height: 110vh;;
-    margin-bottom:-155px;
+    margin-bottom:0px;
 }
 #video{
     width: 100vw;
@@ -93,8 +93,7 @@ button:hover{
     text-align: center;
     color:white;
     font-size: 60px;
-    padding: 30px 0px;
-    margin-bottom: 0;
+    padding: 30px;
   }
   h3{
     font-size: 30px;
@@ -116,7 +115,7 @@ button:hover{
     display: flex;
    justify-content: space-evenly;
    align-items: center;
-   
+   flex-wrap: wrap;
 
   }
 
@@ -142,14 +141,19 @@ button:hover{
 }
   #about-info{
     
-    width:500px;
-    height: 500px;
+    width:100%;
+    max-width: 400px;
+    height:550px;
     color:white;
     background-color: grey;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     border: 3px solid white;
     border-radius: 20px;
 
+  }
+  #blank{
+    width:100%;
+    max-width: 400px;
   }
   #about-info:hover{
     background-color: lightblue;
@@ -203,7 +207,7 @@ button:hover{
     text-align: center;
     color:darkblue;
     font-size: 60px;
-    padding: 60px 0px;
+    padding: 60px;
   }
   
   #skills-lists{
@@ -212,6 +216,7 @@ button:hover{
     justify-content: center;
     justify-content: space-between;
     color: white;
+    flex-wrap: wrap;
     
 
   }
@@ -294,5 +299,8 @@ border-radius: 25px;
     }
     
     
+
+  
+
 
   
