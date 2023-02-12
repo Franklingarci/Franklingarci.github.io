@@ -228,75 +228,302 @@ button:hover{
 background-color: darkblue;
 height: 200px;
 border-color: gray;
-border-width: 4px;
-border-style: solid;
-border-radius: 25px;
-}
-#Skills-list-1:hover{
-  background-color:lightgray ;
-  color:black
-}
-
-#Skills-list-2{
-  background-color: darkblue;
-  height: 200px;
-  border-color: gray;
-  border-width: 4px;
-border-style: solid;
-border-radius: 25px;
-  }
-  #Skills-list-2:hover{
-    background-color:lightgray ;
-    color:black
-  }
-
-  #Skills-list-3{
-    background-color: darkblue;
-    height: 200px;
-    border-color: gray;
-    border-width: 4px;
-border-style: solid;
-border-radius: 25px;
-    }
-    #Skills-list-3:hover{
-      background-color:lightgray ;
-      color:black
-    }
 
 
-    #Skills-list-1:hover, #Skills-list-1:focus,#Skills-list-1:active {
-      -webkit-animation-name: hvr-pulse;
-      animation-name: hvr-pulse;
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-timing-function: linear;
-      animation-timing-function: linear;
-      -webkit-animation-iteration-count: infinite;
-      animation-iteration-count: infinite;
-    }
 
-    #Skills-list-2:hover, #Skills-list-2:focus,#Skills-list-2:active {
-      -webkit-animation-name: hvr-pulse;
-      animation-name: hvr-pulse;
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-timing-function: linear;
-      animation-timing-function: linear;
-      -webkit-animation-iteration-count: infinite;
-      animation-iteration-count: infinite;
-    }
-    #Skills-list-3:hover, #Skills-list-3:focus,#Skills-list-3:active {
-      -webkit-animation-name: hvr-pulse;
-      animation-name: hvr-pulse;
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-timing-function: linear;
-      animation-timing-function: linear;
-      -webkit-animation-iteration-count: infinite;
-      animation-iteration-count: infinite;
-    }
-    
-    
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
   
+}
+/* Typewriter effect 1 */
+@keyframes typing {
+    0.0000%, 27.3488% { content: ""; }
+    1.1395%, 26.2093% { content: "F"; }
+    2.2791%, 25.0698% { content: "Fr"; }
+    3.4186%, 23.9302% { content: "Fra"; }
+    4.5581%, 22.7907% { content: "Fran"; }
+    5.6977%, 21.6512% { content: "Frank"; }
+    6.8372%, 20.5116% { content: "Frankl"; }
+    7.9767%, 19.3721% { content: "Frankli"; }
+    9.1163%, 18.2326% { content: "Franklin"; }
+
+
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .typewriter {
+    --caret: currentcolor;
+  }
+  
+  .typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+  }
+  
+  .typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+  }
+  
+  .typewriter.thick::after {
+    border-right: 1ch solid var(--caret);
+  }
+  
+  .typewriter.nocaret::after {
+    border-right: 0;
+  }
+  
+  
+  @media (prefers-reduced-motion) {
+    .typewriter::after {
+      animation: none;
+    }
+    
+    @keyframes sequencePopup {
+      100% { content: "Franklin"; }
+ 
+  
+        }   
+         .typewriter::before {
+      content: "Franklin";
+      animation: sequencePopup 1s linear infinite;
+    }
+  }
+  
+  /**/
+  
+  
+  
+#home-page{
+    height: 110vh;;
+ 
+}
+#home-page{
+   max-height: 1400px;
+   background-image:url(joshua-reddekopp-GkFQEOubrCo-unsplash.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display: fLex;
+    align-items: center;
+    justify-content: space-between;
+    padding:30px 60px;
+    border-radius: 50px;
+  
+}
+ nav ul li{
+   display: inline;
+    padding:25px;
+}
+
+nav ul li a{
+    color:white;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav li a:hover{
+    color:red;
+    display: inline-block;
+    margin:;
+
+    animation: rubberBand; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+    animation-delay: 0s;
+}
+button{
+    background-color: red;
+    color:lightblue;
+    border-radius: 50px;
+    padding:25px;
+    cursor: pointer;
+}
+
+button:hover{
+    display: inline-block;
+  
+    animation: shakeX; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+    animation-delay: 0s;
+  }
+  #header{
+    color:white;
+    font-size: 60px;
+    margin-top:400px;
+   margin-left: 300px;
+text-align: center;
+
+  }
+  span{
+    color:red;
+  }
+
+  #blank{
+    width:400px
+  }
+  #about h1{
+    text-align: center;
+    color:white;
+    font-size: 90px;
+    padding: 30px;
+  }
+  h3{
+    font-size: 30px;
+   
+  }
+  #about-info li {
+    margin: 0;
+  }
+  #about{
+    background-color: black;
+    width:100%;
+    height: 100%;
+   /* background-image:url(joshua-reddekopp-GkFQEOubrCo-unsplash.jpg);*/
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+  }
+  #about-1{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap; 
+   padding-top: 100px;
+
+  }
+  #about-1 p{
+    margin-left: 10px;
+    font-size: 20px;
+  }
+
+
+  #about-info{
+    
+    width:100%;
+    max-width: 600px;
+    height: 500px;
+    color:white;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+   
+  }
+  #blank{
+    width:100%;
+    max-width: 400px;
+    border-radius: 25px;
+  }
+
+  #about-info, #picture{
+    display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+
+  #picture:hover, #picture:focus, #picture:active {
+    -webkit-animation-name: hvr-pulse;
+    animation-name: hvr-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  
+  #about-info:hover, #about-info:focus, #about-info:active {
+    -webkit-animation-name: hvr-pulse;
+    animation-name: hvr-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  #about-info ul{
+    display: table;
+
+  }
+
+  #skills{
+    background-color: darkblue;
+    width:100%;
+    height:auto;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    margin-top: 320px;
+height: 100%;
+  }
+  #skills h3{
+    text-align: center;
+    color:white;
+    font-size: 60px;
+    padding: 60px;
+  }
+  
+  #skills-lists{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    color: white;
+    flex-wrap: wrap;
+    padding: 60px;
+    
+
+  }
+  svg{
+    display: flex;
+    align-items: center;
+  }
+
+
+  #skills-lists h4{
+  display: flex;
+font-size: 35px;
+  margin-top: 20px;
+  align-items: center;
+  }
+  i{
+    font-size: 55px;
+    align-items: center;
+    display: flex;
+    color: red;
+  }
+
+    
+@media screen and (max-width:489px) {
+  
+  #header{
+    color:white;
+    font-size: 30px;
+    margin-top:100px;
+   margin-left: auto
+  }
+  }
+  #blank{
+    width:60%;
+    margin-left: 80px;
+  }
+  
+  #about-1{
+    display: flex;
+    align-items: center;
+  }
+  
+
 
