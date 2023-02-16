@@ -1,6 +1,5 @@
 
 
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 *{
     font-family: 'Montserrat', sans-serif;
@@ -134,10 +133,9 @@ button:hover{
 text-align: center;
 
   }
-  span{
+  #red{
     color:red;
   }
-
   #blank{
     width:400px
   }
@@ -278,7 +276,19 @@ font-size: 35px;
   nav .fa-solid{
     display: none;
   }
+  #projects{
+    margin-top: 400px;
+    width:100%;
+    height:auto;
 
+  }
+  .projects-display{
+  display: grid;
+  grid-auto-rows:auto ;
+  }
+#projects h1{
+font-size: 60px;
+}
     
 @media screen and (max-width:489px) {
   
@@ -327,4 +337,5 @@ font-size: 35px;
     cursor: pointer;
  }
 }
+
 
