@@ -8,6 +8,9 @@
     scroll-behavior: smooth;
   
 }
+:root{
+  --color1:red;
+}
 /* Typewriter effect 1 */
 @keyframes typing {
     0.0000%, 27.3488% { content: ""; }
@@ -30,6 +33,7 @@
   
   .typewriter {
     --caret: currentcolor;
+    color: white;
   }
   
   .typewriter::before {
@@ -68,9 +72,9 @@
     }
   }
   
-  /**/
   
   
+  /*homepage*/
   
 #home-page{
     height: 110vh;;
@@ -104,15 +108,14 @@ nav ul li a{
 nav li a:hover{
     color:red;
     display: inline-block;
-    margin:;
 
-    animation: rubberBand; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 1s; /* don't forget to set a duration! */
+    animation: rubberBand; 
+    animation-duration: 1s;
     animation-delay: 0s;
 }
 button{
-    background-color: red;
-    color:lightblue;
+    background-color: var(--color1);
+    color:white;
     border-radius: 50px;
     padding:25px;
     cursor: pointer;
@@ -120,9 +123,10 @@ button{
 
 button:hover{
     display: inline-block;
-  
-    animation: shakeX; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 1s; /* don't forget to set a duration! */
+    background-color:#b22222;
+    color:white;
+    animation: shakeX; 
+    animation-duration: 1s;
     animation-delay: 0s;
   }
   #header{
@@ -133,9 +137,14 @@ button:hover{
 text-align: center;
 
   }
-  #red{
-    color:red;
+
+
+
+  /** About Page**/
+  span{
+    color:var(--color1);
   }
+
   #blank{
     width:400px
   }
@@ -156,7 +165,6 @@ text-align: center;
     background-color: black;
     width:100%;
     height: 100%;
-   /* background-image:url(joshua-reddekopp-GkFQEOubrCo-unsplash.jpg);*/
     background-position: center;
     background-size: cover;
     position: relative;
@@ -227,6 +235,9 @@ text-align: center;
 
   }
 
+
+
+/**Skills Page**/
   #skills{
     background-color: darkblue;
     width:100%;
@@ -266,31 +277,33 @@ font-size: 35px;
   margin-top: 20px;
   align-items: center;
   }
+  #Skills-list-1{
+    padding-bottom: 50px;
+  }
+  #Skills-list-2{
+    padding-bottom: 50px;
+  }
+  #Skills-list-3{
+    padding-bottom: 50px;
+  }
+  #Skills-list-1{
+    padding-bottom: 50px;
+  }
   i{
     font-size: 55px;
     align-items: center;
     display: flex;
-    color: red;
+    color: var(--color1);
+    margin-bottom: 0;
+    padding: 0;
   }
  
   nav .fa-solid{
     display: none;
   }
-  #projects{
-    margin-top: 400px;
-    width:100%;
-    height:auto;
 
-  }
-  .projects-display{
-  display: grid;
-  grid-auto-rows:auto ;
-  }
-#projects h1{
-font-size: 60px;
-}
-    
-@media screen and (max-width:489px) {
+    /** Responsive**/
+@media screen and (max-width:600px) {
   
   #header{
     color:white;
@@ -337,5 +350,17 @@ font-size: 60px;
     cursor: pointer;
  }
 }
+@media screen and (min-width:650px) {
+  #header{
+    color:white;
+    font-size: 60px;
+    margin-top:300px;
+   margin-left: auto
+  }
+#about{
+  margin:0;
+}
+}
+
 
 
